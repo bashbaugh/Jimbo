@@ -1,0 +1,2 @@
+# Jimbo
+Awesome discord bot
