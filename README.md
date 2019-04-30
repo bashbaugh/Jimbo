@@ -1,2 +1,3 @@
-# Jimbo
-Awesome discord bot
+# Jimbo Bot
+
+Awesome discord bot.
