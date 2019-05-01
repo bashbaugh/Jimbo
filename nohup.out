@@ -235,3 +235,276 @@ Traceback (most recent call last):
 discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RuntimeError: Session is closed
 2019-05-01 17:41:17,032:INFO:discord.gateway: Websocket closed with 1000 (), cannot reconnect.
 2019-05-01 17:41:17,032:INFO:discord.client: Cleaning up after 2 tasks.
+2019-05-01 17:51:27,335:INFO:discord.client: Cleaning up event loop.
+2019-05-01 17:51:27,404:INFO:discord.gateway: Websocket closed with 1000 (), cannot reconnect.
+2019-05-01 17:51:27,405:INFO:discord.client: Cleaning up after 2 tasks.
+Task exception was never retrieved
+future: <Task finished coro=<_run_event() done, defined at /home/scitronboy/.local/lib/python3.5/site-packages/discord/client.py:253> exception=SystemExit()>
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/client.py", line 573, in run
+    loop.run_forever()
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 421, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 1424, in _run_once
+    handle._run()
+  File "/usr/lib/python3.5/asyncio/events.py", line 126, in _run
+    self._callback(*self._args)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 315, in _wakeup
+    self._step()
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/client.py", line 255, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 898, in on_message
+    await self.process_commands(message)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 895, in process_commands
+    await self.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 14, in die
+    sys.exit()
+SystemExit
+2019-05-01 19:46:36,315:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2019-05-01 19:46:36,316:INFO:discord.client: logging in using static token
+2019-05-01 19:46:36,596:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2019-05-01 19:46:36,598:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2019-05-01 19:46:36,860:INFO:discord.gateway: Shard ID None has connected to Gateway: gateway-prd-main-hzjl, discord-sessions-prd-1-2 (Session ID: 4d5dbd201ce011c0ad488b6738b130a5).
+2019-05-01 19:46:38,864:INFO:discord: We have logged in as Jimbo#9428
+2019-05-01 19:46:39,319:INFO:discord.client: Cleaning up event loop.
+2019-05-01 19:46:39,388:INFO:discord.gateway: Websocket closed with 1000 (), cannot reconnect.
+2019-05-01 19:46:39,389:INFO:discord.client: Cleaning up after 2 tasks.
+2019-05-01 19:48:56,810:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2019-05-01 19:48:56,811:INFO:discord.client: logging in using static token
+2019-05-01 19:48:57,096:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2019-05-01 19:48:57,098:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2019-05-01 19:48:57,213:INFO:discord.gateway: Shard ID None has connected to Gateway: gateway-prd-main-6hd6, discord-sessions-prd-1-6 (Session ID: 21a343eb8229e01adb23b99135541312).
+2019-05-01 19:48:59,217:INFO:discord: We have logged in as Jimbo#9428
+2019-05-01 19:49:45,836:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2019-05-01 19:49:45,837:INFO:discord.client: logging in using static token
+2019-05-01 19:49:46,157:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2019-05-01 19:49:46,159:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2019-05-01 19:49:46,327:INFO:discord.gateway: Shard ID None has connected to Gateway: gateway-prd-main-6hd6, discord-sessions-prd-1-26 (Session ID: 6326ad44e84ea35d0c737e4d5fab2bc7).
+2019-05-01 19:49:48,332:INFO:discord: We have logged in as Jimbo#9428
+2019-05-01 19:52:14,092:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2019-05-01 19:52:14,093:INFO:discord.client: logging in using static token
+2019-05-01 19:52:14,396:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2019-05-01 19:52:14,398:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2019-05-01 19:52:15,146:INFO:discord.gateway: Shard ID None has connected to Gateway: gateway-prd-main-9ln1, discord-sessions-prd-1-22 (Session ID: 5d4345132bc07e4dfdfa68e9209e894f).
+2019-05-01 19:52:17,150:INFO:discord: We have logged in as Jimbo#9428
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.online, activity=game)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.online, activity=game)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.idle, activity=game)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.idle, activity=game)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.idle, activity=game)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.idle)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.idle)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.idle)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.idle)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 21, in restart
+    await bot.change_presence(status=discord.Status.idle)
+NameError: name 'bot' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 72, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'bot' is not defined
+2019-05-01 19:54:25,829:INFO:discord.client: Cleaning up event loop.
+2019-05-01 19:54:25,896:INFO:discord.gateway: Websocket closed with 1000 (), cannot reconnect.
+2019-05-01 19:54:25,897:INFO:discord.client: Cleaning up after 2 tasks.
+Task exception was never retrieved
+future: <Task finished coro=<_run_event() done, defined at /home/scitronboy/.local/lib/python3.5/site-packages/discord/client.py:253> exception=SystemExit()>
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/client.py", line 573, in run
+    loop.run_forever()
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 421, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 1424, in _run_once
+    handle._run()
+  File "/usr/lib/python3.5/asyncio/events.py", line 126, in _run
+    self._callback(*self._args)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 315, in _wakeup
+    self._step()
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/client.py", line 255, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 898, in on_message
+    await self.process_commands(message)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 895, in process_commands
+    await self.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 15, in die
+    sys.exit()
+SystemExit
