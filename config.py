@@ -1,6 +1,20 @@
 import secret
 
+from cogs import friendly, util, meme
+
 APP_TOKEN = secret.TOKEN
+GOOGLE_CUSTOM_SEARCH_ID = secret.GOOGLE_CUSTOM_SEARCH_ID
+GOOGLE_CUSTOM_SEARCH_KEY = secret.GOOGLE_CUSTOM_SEARCH_KEY
+
+COMMAND_COGS = [
+    {
+        'class': friendly.Friendly_commands
+    }, {
+        'class': util.Util_commands
+    }, {
+        'class': meme.Meme
+    }
+    ]
 
 BOT_ACTIVITIES = [
     "Hacking your computer",
@@ -11,7 +25,6 @@ BOT_ACTIVITIES = [
     "IM A BOT",
     "fuck you",
     "Nothing",
-    "Emailing your girlfriend",
     "Ruining your life",
     "fortnite sucks",
     "analyzing your life",
@@ -28,3 +41,5 @@ HOW_ARE_YOU_RESPONSES = [
     ":grinning:",
     "Not the greatest, how are you?",
     ]
+
+DEFAULT_MEME_TYPE = 'google'
