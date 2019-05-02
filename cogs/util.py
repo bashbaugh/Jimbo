@@ -21,3 +21,9 @@ class Util_commands(commands.Cog, name='Utility commands'):
         await self.bot.change_presence(status=discord.Status.idle)
         #await self.bot.close()
         os.execl(sys.executable, sys.executable, * sys.argv) 
+
+
+    @commands.command()
+    async def status(self, ctx):
+        """- Check bot status"""
+        await ctx.send("Well, at least I am alive enough to be able to reply to your message.")

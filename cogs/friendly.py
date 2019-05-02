@@ -1,5 +1,8 @@
 import discord
 from discord.ext import commands
+import random
+
+import config as cfg
 
 class Friendly_commands(commands.Cog, name='Friendly Stuff'):
     def __init__(self, bot):
@@ -22,7 +25,9 @@ class Friendly_commands(commands.Cog, name='Friendly Stuff'):
             await ctx.send('You already said hello, {0.mention}'.format(member))
         self._last_member = member
 
-    @commands.command(name='how_are_you')
+    @commands.command(name='how-are-you')
     async def how_are_you(self, ctx, *, member: discord.Member = None):
         """- Ask how the bot is doing."""     
-        await ctx.send('I am a happy bot')
+        await ctx.send(random.choice(cfg.HOW_ARE_YOU_RESPONSES))
+
+                
