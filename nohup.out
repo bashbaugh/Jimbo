@@ -1,0 +1,72 @@
+2019-05-03 20:28:26,056:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2019-05-03 20:28:26,057:INFO:discord.client: logging in using static token
+2019-05-03 20:28:26,336:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2019-05-03 20:28:26,338:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2019-05-03 20:28:26,457:INFO:discord.gateway: Shard ID None has connected to Gateway: gateway-prd-main-5f9l, discord-sessions-prd-1-22 (Session ID: 94479a9250e9ace80b71909043e8dbf5).
+2019-05-03 20:28:28,462:INFO:discord: We have logged in as Jimbo#9428
+2019-05-03 20:28:46,347:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2019-05-03 20:28:46,348:INFO:discord.client: logging in using static token
+2019-05-03 20:28:46,622:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2019-05-03 20:28:46,624:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2019-05-03 20:28:46,759:INFO:discord.gateway: Shard ID None has connected to Gateway: gateway-prd-main-qg21, discord-sessions-prd-1-5 (Session ID: db3c8f93d36059c87b983b65f2721daf).
+2019-05-03 20:28:48,764:INFO:discord: We have logged in as Jimbo#9428
+2019-05-03 20:35:35,869:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2019-05-03 20:35:35,871:INFO:discord.client: logging in using static token
+2019-05-03 20:35:36,201:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2019-05-03 20:35:36,203:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2019-05-03 20:35:36,333:INFO:discord.gateway: Shard ID None has connected to Gateway: gateway-prd-main-jjr7, discord-sessions-prd-1-28 (Session ID: b12f5fe94b6fcb7a57cacb6f543182ab).
+2019-05-03 20:35:38,336:INFO:discord: We have logged in as Jimbo#9428
+Ignoring exception in command restart:
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 691, in invoke
+    await self.prepare(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 648, in prepare
+    await self._verify_checks(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 598, in _verify_checks
+    raise CheckFailure('The check functions for command {0.qualified_name} failed.'.format(self))
+discord.ext.commands.errors.CheckFailure: The check functions for command restart failed.
+2019-05-03 20:35:59,381:INFO:discord.client: Cleaning up event loop.
+2019-05-03 20:35:59,448:INFO:discord.gateway: Websocket closed with 1000 (), cannot reconnect.
+2019-05-03 20:35:59,449:INFO:discord.client: Cleaning up after 2 tasks.
+[<Role id=572530322286051359 name='@everyone'>, <Role id=572606687890898944 name='bot-admin'>]
+['Admin', 'admin', 'bot-admin', 'Bot-admin', 'Jimbo-admin']
+[<Role id=572530322286051359 name='@everyone'>, <Role id=572606687890898944 name='bot-admin'>, <Role id=572530828718899213 name='Secret'>]
+['Admin', 'admin', 'bot-admin', 'Bot-admin', 'Jimbo-admin']
+Task exception was never retrieved
+future: <Task finished coro=<_run_event() done, defined at /home/scitronboy/.local/lib/python3.5/site-packages/discord/client.py:253> exception=SystemExit()>
+Traceback (most recent call last):
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/client.py", line 573, in run
+    loop.run_forever()
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 421, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.5/asyncio/base_events.py", line 1424, in _run_once
+    handle._run()
+  File "/usr/lib/python3.5/asyncio/events.py", line 126, in _run
+    self._callback(*self._args)
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 315, in _wakeup
+    self._step()
+  File "/usr/lib/python3.5/asyncio/tasks.py", line 239, in _step
+    result = coro.send(None)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/client.py", line 255, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 898, in on_message
+    await self.process_commands(message)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 895, in process_commands
+    await self.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/bot.py", line 860, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 698, in invoke
+    await injected(*ctx.args, **ctx.kwargs)
+  File "/home/scitronboy/.local/lib/python3.5/site-packages/discord/ext/commands/core.py", line 63, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/scitronboy/Jimbo/cogs/util.py", line 18, in die
+    sys.exit()
+SystemExit
+2019-05-03 20:38:33,317:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2019-05-03 20:38:33,318:INFO:discord.client: logging in using static token
+2019-05-03 20:38:33,603:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2019-05-03 20:38:33,605:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2019-05-03 20:38:33,717:INFO:discord.gateway: Shard ID None has connected to Gateway: gateway-prd-main-029q, discord-sessions-prd-1-13 (Session ID: 71487b94817beb5f118462a90338a719).
+2019-05-03 20:38:35,721:INFO:discord: We have logged in as Jimbo#9428

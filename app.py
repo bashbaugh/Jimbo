@@ -12,6 +12,7 @@ from discord.ext import commands
 import logging
 
 import config as cfg
+from util import userUtils
 
 logger = logging.getLogger('discord')
 formatter = logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s')
@@ -31,7 +32,8 @@ async def on_ready():
     logger.info('We have logged in as {0.user}'.format(bot))
     game = discord.Game(random.choice(cfg.BOT_ACTIVITIES))
     await bot.change_presence(status=discord.Status.online, activity=game)
-    
+
+
 for cog in cfg.COMMAND_COGS:
     bot.add_cog(cog['class'](bot))
 
