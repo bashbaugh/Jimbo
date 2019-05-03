@@ -43,3 +43,4 @@ HOW_ARE_YOU_RESPONSES = [
     ]
 
 DEFAULT_MEME_TYPE = 'google'
+GOOGLE_MEME_SEARCH_QUERIES = ['programmer humor', 'programming memes', 'programming meme', 'coding meme']
