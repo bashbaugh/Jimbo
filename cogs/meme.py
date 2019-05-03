@@ -15,7 +15,7 @@ class Meme(commands.Cog, name='Memes'):
         """[google] - Fetch a meme from the internet."""
         message = ""
         if meme_type is None:
-            message += "Meme type not specified. Defaulting to `{}` ".format(cfg.DEFAULT_MEME_TYPE)
+            # message += "Meme type not specified. Defaulting to `{}` ".format(cfg.DEFAULT_MEME_TYPE)
             meme_type = cfg.DEFAULT_MEME_TYPE
 
         if meme_type == 'google':
