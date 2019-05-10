@@ -2,6 +2,8 @@
 secret.py
 nohup.out
 *.swp
+*.pem
+*.ppk
 
 
 # Byte-compiled / optimized / DLL files

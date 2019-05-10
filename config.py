@@ -1,6 +1,6 @@
 import secret
 
-from cogs import friendly, util, meme
+from cogs import friendly, util, meme, sandbox
 
 APP_TOKEN = secret.TOKEN
 GOOGLE_CUSTOM_SEARCH_ID = secret.GOOGLE_CUSTOM_SEARCH_ID
@@ -13,6 +13,8 @@ COMMAND_COGS = [
         'class': util.Util_commands
     }, {
         'class': meme.Meme
+    }, {
+        'class': sandbox.Sandbox_commands
     }
     ]
 
@@ -46,3 +48,7 @@ DEFAULT_MEME_TYPE = 'google'
 GOOGLE_MEME_SEARCH_QUERIES = ['programmer+humor', 'programming+memes', 'programming+meme', 'coding+meme']
 
 BOT_ADMIN_ROLES = ['Admin', 'admin', 'bot-admin', 'Bot-admin', 'Jimbo-admin']
+
+SANDBOX_SSH_HOST = secret.SANDBOX_SSH_HOST
+SANDBOX_SSH_USERNAME = 'ubuntu'
+SANDBOX_SSHKEY_FILENAME='jimbo.pem'
