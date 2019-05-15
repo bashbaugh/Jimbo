@@ -24,7 +24,8 @@ class Fun(commands.Cog, name='Memes'):
 
         if "xkcd #" in message.content:
             before, kw, after = message.content.partition('xkcd #')
-            URL =  "https://xkcd.com/{}/info.0.json".format(after.split(' ')[0])
+            num = after.split(' ')[0]
+            URL =  "https://xkcd.com/{}/info.0.json".format(num)
             req = urllib.request.Request(URL)
             try:
                 data = json.loads(urllib.request.urlopen(req).read().decode('utf-8'))
