@@ -6,10 +6,20 @@ from discord.ext import commands
 
 import config as cfg
 
-class Meme(commands.Cog, name='Memes'):
+class Fun(commands.Cog, name='Memes'):
     def __init__(self, bot):
         self.bot = bot
 
+    @commands.Cog.listener()
+    async def on_message(self, message):
+        """Respond to 'latest xkcd'"""
+        if "latest xkcd" in message.content:
+            # https://xkcd.com/json.html
+            latestURL = "https://xkcd.com/info.0.json"
+            req = urllib.request.Request(latestURL)
+            data = json.loads(urllib.request.urlopen(req).read().decode('utf-8'))
+            await message.channel.send('"' + data['alt'] + '": ' + data['img'])
+    
     @commands.command(name='meme')
     async def getmeme(self, ctx, meme_type=None):
         """[google] - Fetch a meme from the internet."""

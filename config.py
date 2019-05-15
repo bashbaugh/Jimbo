@@ -1,6 +1,6 @@
 import secret
 
-from cogs import friendly, util, meme
+from cogs import friendly, util, fun
 
 APP_TOKEN = secret.TOKEN
 GOOGLE_CUSTOM_SEARCH_ID = secret.GOOGLE_CUSTOM_SEARCH_ID
@@ -12,7 +12,7 @@ COMMAND_COGS = [
     }, {
         'class': util.Util_commands
     }, {
-        'class': meme.Meme
+        'class': fun.Fun
     }
     ]
 
