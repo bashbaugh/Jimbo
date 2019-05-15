@@ -12,8 +12,6 @@ class Fun(commands.Cog, name='Memes'):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        if message.author == self.bot.user:
-            return
         """Respond to 'latest xkcd' or 'xkcd #x'"""
         if "latest xkcd" in message.content:
             # https://xkcd.com/json.html
