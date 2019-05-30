@@ -1,6 +1,6 @@
 import secret
 
-from cogs import friendly, util, fun
+from cogs import friendly, util, fun, macros
 
 APP_TOKEN = secret.TOKEN
 GOOGLE_CUSTOM_SEARCH_ID = secret.GOOGLE_CUSTOM_SEARCH_ID
@@ -13,6 +13,8 @@ COMMAND_COGS = [
         'class': util.Util_commands
     }, {
         'class': fun.Fun
+    }, {
+        'class': macros.Macros
     }
     ]
 
@@ -46,3 +48,6 @@ DEFAULT_MEME_TYPE = 'google'
 GOOGLE_MEME_SEARCH_QUERIES = ['programmer+humor', 'programming+memes', 'programming+meme', 'coding+meme']
 
 BOT_ADMIN_ROLES = ['Admin', 'admin', 'bot-admin', 'Bot-admin', 'Jimbo-admin']
+BOT_MANAGER_ID = "563490372836130817"
+
+MACRO_PREFIX = '++'

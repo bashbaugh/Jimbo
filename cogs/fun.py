@@ -6,7 +6,7 @@ from discord.ext import commands
 
 import config as cfg
 
-class Fun(commands.Cog, name='Memes'):
+class Fun(commands.Cog, name='Fun'):
     def __init__(self, bot):
         self.bot = bot
 
@@ -33,7 +33,7 @@ class Fun(commands.Cog, name='Memes'):
             except urllib.error.HTTPError:
                 await message.channel.send("HTTP error. Are you sure that's a valid id? To get an xkcd, please type `xkcd #x`, where x is the xkcd comiic id (a number)")
 
-    @commands.command(name='Fun')
+    @commands.command(name='meme')
     async def getmeme(self, ctx, meme_type=None):
         """[google] - Fetch a meme from the internet."""
         message = ""
